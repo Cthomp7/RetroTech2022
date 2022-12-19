@@ -1,0 +1,62 @@
+.title {
+    margin: 1.3em auto;
+ }
+ 
+ .title-text h1 {
+     font-size: 1rem;
+     text-align: center;
+     margin: .2em 0;
+     white-space: nowrap;
+ }
+ 
+ .title-text {
+     display: flex;
+     margin: 0 auto;
+     max-width: 70%;
+     justify-content: space-between;
+ }
+ 
+ .title-text > img {
+     max-height: 20px;
+ }
+ 
+ .line, .line-2 {
+     border: 1px solid lime;
+     margin: .2em auto;
+ }
+ 
+ .line {
+     width: 75%;
+ }
+ .line-2 {
+     width: 70%;
+ }
+ 
+ .int-list {
+     margin-top: 2.8em;
+     margin-left: .5em;
+ }
+ 
+ .int-list ol {
+     counter-reset: item;
+     list-style-type: none;
+ }
+ 
+ .int-list ol li{
+     margin: 1.2em;
+ }
+ .int-list ol li::before{
+     content: counter(item) " > "; 
+     counter-increment: item; 
+ }
+ 
+ .int-input {
+     margin-left: 4em;
+     margin-bottom: 1.5em;
+     display: flex;
+     align-items: flex-end;
+ }
+ 
+ #input-box {
+     margin-left: 1rem;
+ }

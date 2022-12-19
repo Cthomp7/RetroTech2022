@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'APPLE2';
+    src: url('/fonts/Shaston320.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'APPLE2', sans-serif;
+    color: white;
+    line-height: 1.2em;
+}
+
+main {
+    display: flex;
+}
+
+.interface {
+    width: calc(192px * 3);
+    height: calc(140px * 3);
+    border: 3px solid white ;
+    margin: 2em auto;
+}
+
+.int-cont {
+    width: calc(100% - .5em);
+    height: calc(100% - .5em);
+    margin: .1em auto;
+    border: 2px solid lime;
+    position: relative;
+}
