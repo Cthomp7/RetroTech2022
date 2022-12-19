@@ -9,8 +9,7 @@ function Menu() {
     }).then(header => {
         $('head').append('<link rel="stylesheet" href="/MENU/style.css">');
         $('.int-cont').empty();
-        int_cont.insertAdjacentHTML("afterbegin", header);
-        //$('.int-cont').append(header);
+        $('.int-cont').append(header);
         console.log(header)
     });
 }
