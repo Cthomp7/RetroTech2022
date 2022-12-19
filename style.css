@@ -24,7 +24,7 @@ main {
     margin: 2em auto;
 }
 
-.int-cont {
+#int-cont {
     width: calc(100% - .5em);
     height: calc(100% - .5em);
     margin: .1em auto;

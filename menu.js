@@ -1,4 +1,5 @@
 let menu = true;
+let int_cont = document.getElementById('int-cont');
 Menu();
 
 function Menu() {
@@ -8,7 +9,9 @@ function Menu() {
     }).then(header => {
         $('head').append('<link rel="stylesheet" href="/MENU/style.css">');
         $('.int-cont').empty();
-        $('.int-cont').append(header);
+        int_cont.insertAdjacentHTML("afterbegin", header);
+        //$('.int-cont').append(header);
+        console.log(header)
     });
 }
 
@@ -32,6 +35,8 @@ $( "body" ).keypress(function(e) {
                     return response.text();
                     }).then(header => {
                     $('.int-cont').empty();
+                    // let int_cont = document.getElementById('int-cont');
+                    console.log(header)
                     $('.int-cont').append(header);
                     if($('.wel'.length)){
                         $('head').append('<link class="wel" rel="stylesheet" href="/WEL/style.css">');
